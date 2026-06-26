@@ -19,7 +19,7 @@ A client-side password strength checker that evaluates passwords in real time an
 
 ## Usage
 
-Open `index.html` in any modern browser. No build tools or server required.
+Open https://kbtheboom74-lab.github.io/Password-Strength-Checker-/
 
 ## Tech Stack
 
