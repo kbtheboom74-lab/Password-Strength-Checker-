@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #1a1a2e;
+  color: #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: #16213e;
+  padding: 2.5rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  color: #e94560;
+}
+
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#password {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 2px solid #0f3460;
+  border-radius: 8px;
+  background: #1a1a2e;
+  color: #e0e0e0;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#password:focus {
+  border-color: #e94560;
+}
+
+#toggle-visibility {
+  padding: 0.75rem;
+  border: 2px solid #0f3460;
+  border-radius: 8px;
+  background: #1a1a2e;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.strength-meter {
+  margin-top: 1rem;
+  height: 8px;
+  background: #0f3460;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.strength-bar {
+  height: 100%;
+  width: 0;
+  border-radius: 4px;
+  transition: width 0.3s, background-color 0.3s;
+}
+
+.strength-label {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  min-height: 1.2em;
+}
+
+.requirements {
+  list-style: none;
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.requirements li {
+  font-size: 0.85rem;
+  color: #888;
+  transition: color 0.2s;
+}
+
+.requirements li.met {
+  color: #4ecca3;
+}
+
+.requirements li .icon {
+  display: inline-block;
+  width: 1.2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.requirements li.met .icon {
+  color: #4ecca3;
+}
+
+#generate {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background: #e94560;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#generate:hover {
+  background: #c73652;
+}
+
+.generated-password {
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #1a1a2e;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #0f3460;
+}
+
+.generated-password code {
+  flex: 1;
+  word-break: break-all;
+  font-size: 0.9rem;
+  color: #4ecca3;
+}
+
+#copy {
+  padding: 0.4rem 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background: #0f3460;
+  color: #e0e0e0;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+#copy:hover {
+  background: #1a4a8a;
+}
